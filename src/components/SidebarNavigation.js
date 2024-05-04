@@ -70,22 +70,26 @@ const Navigations = [
 export default function SidebarNavigation() {
     const [activeLink, setActiveLink] = useState(0);
 
+    
+
     const changeActive = (index) => {
         setActiveLink(index);
     };
 
     return (
-        <Container>
-            <Row className='gap-4'>
-                {Navigations.map((nav, index) => (
-                    <Col key={nav.id} sm={12} onClick={() => changeActive(index)} className='dash_nav_item'>
-                        <Button className={`d-flex gap-2 ${activeLink === index ? "btn-primary" : "btn-custom"}`} href='#'>
-                            {nav.svg && nav.svg()} {/* Conditionally render SVG */}
-                            {nav.name}
-                        </Button>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <>
+                <Container fluid>
+                    <Row className='gap-4'>
+                        {Navigations.map((nav, index) => (
+                            <Col key={nav.id} lg={12} onClick={() => changeActive(index)} className='dash_nav_item'>
+                                <Button className={`d-flex gap-2 ${activeLink === index ? "btn-primary" : "btn-custom"}`} href='#'>
+                                    {nav.svg && nav.svg()} {/* Conditionally render SVG */}
+                                    <span className='nav_name'>{nav.name}</span>
+                                </Button>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+        </>
     );
 }

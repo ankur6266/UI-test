@@ -25,11 +25,7 @@ export default function PopularQues() {
                         <Row className='ms-1 d-flex justify-content-start gap-2 quest-tags'>
                             
                                 <Button variant="danger" className="">#java</Button>
-                            
-                            
-                                <Button variant="info" className="">c++</Button>
-                            
-                            
+                                <Button variant="info" className="">c++</Button>4
                                 <Button variant="success" className="">#performance</Button>
                             
                         </Row>

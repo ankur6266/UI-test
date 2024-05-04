@@ -48,13 +48,13 @@ const Navigations = [
 
 function DashboardTabs() {
   return (
-    <Container className='dash_tabs'>
-        <Nav className='gap-5' variant="underline" defaultActiveKey="/home">
+    <Container fluid className='dash_tabs'>
+        <Nav className='gap-5 xs-gap-2' variant="underline" defaultActiveKey="/home">
         {Navigations.map(nav => {
             return(
                 <Nav.Item className=''>
                     <Nav.Link href={nav.link} className='d-flex align-items-center gap-3 text-secondary'>
-                    {nav.svg && nav.svg()} {/* Conditionally render SVG */}
+                    {nav.svg && nav.svg()}
                     {nav.name}
                     </Nav.Link>
                 </Nav.Item>

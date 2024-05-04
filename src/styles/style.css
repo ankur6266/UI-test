@@ -153,8 +153,14 @@ header.header{
     border-radius: 50%;
 }
 
-.dash_nav_item.active {
-    color: red; /* Change color as per your preference */
+.dashboardHeader {
+	/* position: fixed;
+	margin: auto;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+    background-color: #16161A;
+    margin-bottom: 100px; */
 }
 
 .dashboardPage .btn-custom{
@@ -178,4 +184,41 @@ header.header{
     font-size: 12px;
     padding: 0px 10px;
     width: max-content;
+}
+
+.sidebarNavs{
+    position: fixed;   
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .sidebarNavs{ 
+        z-index: 999;
+        background: #1C1E27;    
+        max-width: min-content;
+        top: 0;
+        height: 100vh;
+    }
+    .sidebarClose{
+        transform: translateX(-150%);
+        transition: .5s ease-in-out;
+    }
+    .sidebarOpen{
+        transition: .5s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sidebarNavs .dash_nav_item .nav_name{
+        /* display: none; */
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .toggle-button{
+        display: none !important;
+    }
 }

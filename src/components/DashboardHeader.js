@@ -3,7 +3,7 @@ import { Button, Col, Container, Image, Navbar, Row } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form';
 import logo from '../assets/logo.jpg'
 
-export default function DashboardHeader() {
+export default function DashboardHeader({props}) {
   return (
         <Row className='dashboardHeader p-1 border-bottom border-secondary-subtle'>
             <Col lg={4} className='d-flex gap-2 align-items-center'>
