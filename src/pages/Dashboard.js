@@ -12,10 +12,10 @@ export default function Dashboard() {
     <Container fluid className='dashboardPage'>
         <DashboardHeader />
         <Row className='p-4'>
-            <Col lg={2}>
+            <Col lg={2} className='position-fixed'>
                 <SidebarNavigation />
             </Col>
-            <Col lg={7}>
+            <Col lg={7} className='ms-auto border-left'>
                 <Row>
                     <Col className='text-white'>
                         <Row>
@@ -31,7 +31,6 @@ export default function Dashboard() {
                             <Col>
                                 <DashboardTabs/>
                             </Col>
-
                         </Row>
                     </Col>
                 </Row>

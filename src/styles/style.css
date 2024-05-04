@@ -116,7 +116,7 @@ header.header{
 .dashboardPage{
     background: #16161A;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .searchForm input, .searchForm button{
@@ -164,4 +164,18 @@ header.header{
 
 .dash_tabs .post_details{
     background: #1C1E27;
+}
+
+.popularQuestions .card{
+    background: #1C1E27;    
+}
+
+.quest-tags .col-4{
+    padding: 5px;
+}
+
+.quest-tags button{
+    font-size: 12px;
+    padding: 0px 10px;
+    width: max-content;
 }

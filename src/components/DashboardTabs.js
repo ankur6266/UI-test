@@ -62,15 +62,21 @@ function DashboardTabs() {
         })}
         </Nav>
 
-        <Card className='post_details mt-4 p-3'>
-            <Row>
-                <Col className='d-flex gap-3 align-items-center text-secondary'>
+        <Card className='post_details mt-4 p-3 text-secondary'>
+            <Row className='d-flex justify-content-between'>
+                <Col className='d-flex gap-3 align-items-center'>
                     <Image className='rounded-circle' width={40} src="https://tovanidesign.com/wp-content/uploads/2019/02/C-_Users_Chrystina_Dropbox_tovani-design_size-examples-of-portraits_for-web_1-1-aspect-ratio-prints-at-square-for-social-media-for-web-photo-by-chrysti-tovani.jpg" />
                     <p>Michal John</p>
                 </Col>
                 <Col>
-                    
+                    <p className='ms-auto w-max' style={{width: "max-content"}}>7 Dec, 2:25 PM</p>
                 </Col>
+                <Card.Title className='text-white pt-4'>
+                    How do I return the response/result from a function foo that means that makes an asynchornus request ?
+                </Card.Title>
+                <Card.Body className='border border-secondary rounded m-3'>
+                    <Image width={'100%'} src='https://cdn-media-1.freecodecamp.org/images/1*mXjNHOx9bbQ5D4sSUAX2Lg.png' />
+                </Card.Body>
             </Row>
         </Card>
 
